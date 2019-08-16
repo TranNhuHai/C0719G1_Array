@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Dictionary 2</title>
+</head>
+<input id="input">
+<button onclick="dictionary()">TRANSLATE</button>
+<p id="result"></p>
+<body>
+<script>
+
+     let   dataEnglish=["be","then","ten","elevent"];
+    let    dataTiengViet=["la","thi","10","11"];
+
+
+    function dictionary() {
+        let textInput=document.getElementById('input').value;
+        for(let i=0; i<dataEnglish.length; i++){
+            if(textInput === dataEnglish[i]){
+                document.getElementById('result').innerHTML = dataTiengViet[i];
+                return;
+            }
+        }
+        alert("Khong tim thay")
+
+    }
+</script>
+</body>
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Nhap mang va dao nguoc</title>
+</head>
+<body>
+<input  id="input">
+<button type="button" id="add" onclick="addArray()">ADD</button>
+<button type="button" id="reverse " onclick="reverseArray()">REVERSE</button>
+<br>
+<p id="result"></p>
+<script>
+    let array=[];
+    function addArray() {
+        array.push((document.getElementById('input').value));
+        document.getElementById('input').value="";
+    }
+    function reverseArray() {
+        array.reverse();
+    document.getElementById('result').innerHTML=array;
+    }
+
+
+</script>
+</body>
+</html>

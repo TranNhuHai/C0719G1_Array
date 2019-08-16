@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Dictionary</title>
+</head>
+<body>
+<input type="text" id = 'textWord'>
+<p id='result'></p>
+<button type="button" onclick="searchText()">Search</button>
+<script>
+    let dataEnglish  =["if","else","end","then","del","but","browser","now"];
+    let dataTiengViet=["neu","khong","cuoi","thi","xoa","but","duyet","hien tai"];
+function searchText() {
+    let inputText = document.getElementById('textWord').value;
+    if (dataEnglish.indexOf(inputText) == -1) {
+        document.getElementById('result').innerHTML = 'not found'
+    } else {
+                document.getElementById('result').innerHTML = dataTiengViet[(dataEnglish.indexOf(inputText))];
+            }
+
+
+
+
+}
+
+
+</script>
+</body>
+</html>

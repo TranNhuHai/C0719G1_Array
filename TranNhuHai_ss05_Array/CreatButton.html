@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Creat Button</title>
+</head>
+<body>
+<div id="board">
+
+</div>
+<script>
+    let a=prompt('a')
+    let b=prompt('b');
+    let butt = '<button id='+'"'+a+ '-' + b + '"' + 'onclick=' + 'checkcell(' + "'" + a + '-' + b + "'" + ')' + '"' + '>' + 'Click'+'</' + 'button>';
+    document.getElementById('board').innerHTML=butt;
+    console.log(butt);
+    function checkcell(id){
+        alert(id);
+    }
+</script>
+</body>
+</html>

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Luyen tap 01-07</title>
+</head>
+<body>
+<input id="input">
+<button id ="add" type="button" onclick="addArray()">ADD</button>
+<button id="change" type="button" onclick="changeArray()">CHANGE</button>
+<p id ="result"></p>
+
+<script>
+    let arrayNumber =[];
+   function addArray(){
+        arrayNumber.push(Number(document.getElementById('input').value));
+       console.log(arrayNumber);
+       document.getElementById('input').value ="";
+    }
+console.log(arrayNumber);
+</script>
+</body>
+</html>

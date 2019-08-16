@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Luyen Tap 01-01-02-03-05</title>
+</head>
+<body>
+<script>
+    let arrayNumber =[1,2,4,5,2,4,12,44,22,10];
+    let max         = arrayNumber[0];
+    let trungBinh,
+        sum=0,
+        index=0,
+        count=0;
+    for(let i=0; i<10; i++) {
+        if (arrayNumber[i] >= 10) {
+            document.write(arrayNumber[i] + ",");
+        }
+        if(max<arrayNumber[i]){
+            max =arrayNumber[i];
+            index=i;
+        }
+        sum=sum+arrayNumber[i];
+        if(arrayNumber[i]<0){
+            document.write(arrayNumber[i]);
+            count+=1;
+        }
+    }
+
+    trungBinh=sum/arrayNumber.length;
+    document.write("gia tri TB:"+trungBinh+ "gia tri lon nhat:"+max+ "tai:" +index+"So cac so am: "+count);
+
+</script>
+</body>
+</html>
